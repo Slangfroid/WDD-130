@@ -212,6 +212,20 @@ main.home-grid {
     grid-row: 4/9;
 }
 
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    /* display: none;       */
+}
+.moveDown {
+    margin-top: 3em;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
