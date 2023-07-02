@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap');
+
+body {
+    background-color:white;
+    font-family: Raleway, Indie Flower;
+    max-width: 1650px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+    text-align:center;
+    color: #95A3A4;
+}
+.home-title{
+    color:#697268;
+    margin-top: 10px;
+    font-family: Indie Flower, "Raleway";
+    font-size: 2.5em
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+    border: solid 5px #E2E8DD;
+}
+header {
+    background-color: #B7D1DA;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a:hover{
+    background-color: black;
+    color:rgb(0, 110, 255)
+}
+nav a{
+    text-align:center;
+    color: rgb(0, 110, 255);
+    text-decoration: none;
+    padding: 35px;
+}
+#intro {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: 10px; 
+}
+#intro-box {
+    grid-column: 1/11;
+    grid-row: 1;
+    z-index: -1;
+    background-color: #E2E8DD;
+    text-align: left;
+}
+#intro-img{
+    width: 300px;
+    border: solid 3px #B7D1DA;
+}
+
+#intro-msg {
+    grid-column: 3/11;
+    grid-row: 1/2;
+    color:#697268;
+    font-size: large;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.card-img{
+    margin-top: 10px;
+    width: 100%;
+}
+.python-card{
+    grid-column: 1/11;
+    grid-row: 0/1;
+}
+
+.projects-card{
+    grid-column:2/6;
+    grid-row: 2/4;
+    float: left;
+    width:  500px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.projects-card:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.teamwork-card{
+    grid-column: 7/10;
+    grid-row: 2/4;
+    float: left;
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+}
+.teamwork-card:hover{
+    opacity: .6;
+    transform: scale(1.1);
+    
+}
+footer h3 {
+    color: #457b9d;
+    text-decoration: underline;
+}
+
+footer a{
+    color:#087c99;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: #B7D1DA;
+    color:#087c99;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img{
+    padding-top: 15px
+}
