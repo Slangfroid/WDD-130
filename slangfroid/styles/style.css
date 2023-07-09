@@ -81,7 +81,6 @@ nav a{
 }
 .python-card{
     grid-column: 1/11;
-    grid-row: 0/1;
 }
 
 .projects-card{
