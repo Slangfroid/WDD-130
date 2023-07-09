@@ -20,12 +20,76 @@
             
         </nav>
     </header>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Resized_20210602_171054.jpg" style="width:100%">
+      <div class="text">Construction</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Tennis-State-Champs.png" style="width:100%">
+      <div class="text">Tennis</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/tennis3.jpg" style="width:100%">
+      <div class="text">Tennis</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
     <div id="teamwork">
         <section id="teamwork-msg">
             <h1 class="teamwork-title">Teamwork</h1>
             <p>I have learned that teamwork is one of the most vital parts of the Computer Science field. Time is not our friend, and a single person
                 does not have enough time to accomplish major projects in the coding world. When you are working with another person the weight of
-                the task is lighter and the speed at which you can accomplish great tasks is amplified. Below are just a few examples of different
+                the task is lighter and the speed at which you can accomplish great tasks is amplified. Above are just a few examples of different
                 aspects of teamwork I have been involved in. I know what it means to be a team player. Resposibility and accountability are two major
                 attributes that I try to incorporate into myself in everything I do, including teamwork. Out of all of the teams I have been in, the ones
                 that accomplish the most and get the furthest are the ones that are more accountable and resposible. Communication, good leadership, and
@@ -35,25 +99,36 @@
     </div>
     <main class="home-grid">
         <section class="construction-card">
-            <img class="card-img" src="images/Resized_20210602_171054.jpg" alt="construction">
+            <img class="card-img" src="images/construction.jpg" alt="construction">
             <h2>House Construction</h2>
-            <p>text</p>
+            <p>Sometimes teamwork is hard work. You have to get in the mess of things to get a completed product. It is easy to be the guy standing around
+            with a shovel, but by choosing ease over work you are being detrimental to your team. It is important to recognize how important each individual
+            hand is in creating. Even though my knowledge of construction was very limited while I worked this job, I still wanted to be a team player and get
+            in the mess of things. The result was concrete and contentment.
+            </p>
         </section>
-        <section class="snowcone-card">
-            <img class="card-img" src="images/snow-cone.webp" alt="snowcone">
-            <h2>Snow Cone Making</h2>
-            <p>text</p>
+        <section class="tennis-team-card">
+            <img class="card-img" src="images/tennis-team2.jpg" alt="tennis team">
+            <h2>Tennis team</h2>
+            <p>This is my tennis team my junior year of highschool. It was the first year in our school that both the girls and boys teams had won
+            the divisional tournament in the same year. It was also the second time that our boys team had ever won a divisional tourney. What I learned
+            that year about teamwork was the importance of our bonds together. I didn't do so hot that year in the tournament, but these teamates had become
+            a family to me. I felt like I contributed even with the little skills I had. Everyone in a team setting has something to contribute.
+            </p>
         </section>
         <section class="tennis-card">
-            <img class="card-img" src="images/Tennis-State-Champs.png" alt="rafting boat">
-            <h2>State Tennis</h2>
-            <p>text</p>
+            <img class="card-img" src="images/tennis-team.jpg" alt="tennis partners">
+            <h2>Divisional Tennis</h2>
+            <p>Small accomplishments leade to bigger ones! We first had to play many long hard matches in the season that eventually led up to our huge state championship victory!
+            We had to consitently hone in our skills throughout other competitions to be able to compete at the level that we did in our State Tournament. We also had to rely upon
+            one another and trust that we would perform. In the end our synergy is what put us above the other competitors. It shows as well that two people can make a difference;
+            Especially when you work together.
+            </p>
         </section>
     </main>
     <footer>
         <p>Nathaniel Leonardson</p>
         <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
