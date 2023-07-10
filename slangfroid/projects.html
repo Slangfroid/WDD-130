@@ -25,18 +25,34 @@
         </div>
         <section id="project-msg">
             <h1 class="project-title">My Projects</h1>
-            <p> Pictured above is one of the comparison charts that I made for a project for machine learning.
-                In this particular case I was trying to determine whether or not a house was pre-1980 or not. Below are some of the
-                other projects that I have worked on.
+            <p> This page contains various projects that I have created and worked on. I always am working on something new, and never feel like I have enough time to complete
+                enough projects. The random quote generator below was one of the first projects that I completed that really made me proud of what I was able to do. I had done a
+                lot of different coding projects in the past but the random quote generator was one project in particular that blew my mind I could make. For me, Making code that makes a
+                clickable button was monumental. Something huge. I remember showing my mom and telling her, "Mom, isn't it insane that I can make a button on a website that generates a quote
+                every time I press the button. Like, I did that!" The pride of my simple creation will always be a huge milestone for me. This is the joy that I find in creating things with 
+                coding and I hope to have more experiences like this in the future. Another instance of a project that i really enjoyed working on is pictured on the left. It is an example of a 
+                scatterplot matrix that I used to experiment with machine learning data. The blue dots are all true data points and the orange ones are false. This particular scatterplot was 
+                made with seaborn and then I used sklearn models to train and test the data. Overall for the true data I was able to achieve 92% for the true data, and 93% for the recall. 
+                For the false data I achieved 88% precision and a 86% recall. My overall accuracy was 90%. That translates to 276 false negatives, and 226 false positives. This graph is just a
+                sample of what I have done with machine learning and I have big plans for what I am going to make in the future.
             </p>
         </section>
     </div>
-    <main class="project-grid">
-        <section class="quote-generator">
-            <img class="card-img" src="images/2023-06-16.png" alt="quote-generator">
-            <h2>Quote Generator</h2>
-            <p>This is a Quote generator personal project that I made.</p>
-        </section>
+    <div class="quote-box">
+        <div class="card">
+          <h2>Random Quote Generator</h2>
+          <!--button to display random quote-->
+          <button onclick="displayQuote()" class="btn">Click Here!</button>
+        </div>
+        <div id="quotes-box"></div>
+            <p class="quote"></p>
+            <p class="source"></p>
+            <p class="quote-gen">This is the quote generator that I made on the right. I used Javascript to be able to make it have an event listener to generate a 
+            quote when the button is pressed. Click it a few times and test it out! As you can see in general as of right now (2023) this page is
+            fairly empty because I want to reserve it for personal projects that I made on my own. I have made a lot of projects so far in college, but I don't really
+            count them as my own personal projects because we received a lot of instruction and were given most of the code for the projects.
+            </p>
+    </div>
     </main>
     <footer>
         <p>Nathaniel Leonardson</p>
@@ -55,4 +71,5 @@
     </footer>
     </div>
 </body>
+<script src="js/main.js"></script>
 </html>
